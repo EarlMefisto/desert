@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import styled from "styled-components";
 
@@ -7,7 +6,7 @@ function App() {
     <div>
       <Container>
         <Card>
-          <StylesImage src={"/image.png"} />
+          <StylesImage src={process.env.PUBLIC_URL + "/image.png"} />
           <CardTitle>Headline</CardTitle>
           <CardText>
             Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
