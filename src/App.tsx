@@ -41,6 +41,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
   min-height: 90vh;
 
   padding: 20px;
@@ -48,6 +49,7 @@ const Container = styled.div`
 
 const StylesImage = styled.img`
   background-size: cover;
+  /* object-fit: cover; */
   min-width: 100%;
 `;
 
