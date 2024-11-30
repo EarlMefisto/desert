@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function App() {
   return (
-    <div>
+    <StyledApp>
       <Container>
         <Card>
           <StylesImage src={process.env.PUBLIC_URL + "/image.png"} />
@@ -17,11 +17,13 @@ function App() {
           </BtnBox>
         </Card>
       </Container>
-    </div>
+    </StyledApp>
   );
 }
 
 export default App;
+
+const StyledApp = styled.section``
 
 const Card = styled.div`
   display: "flex";
@@ -49,11 +51,10 @@ const Container = styled.div`
 
 const StylesImage = styled.img`
   background-size: cover;
-  /* object-fit: cover; */
   min-width: 100%;
 `;
 
-const CardTitle = styled.div`
+const CardTitle = styled.h1`
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: 750;
@@ -61,10 +62,10 @@ const CardTitle = styled.div`
   font-size: 16px;
   color: #000;
 
-  padding: 20px 200px 0px 10px;
+  padding: 10px 0 0 10px;
 `;
 
-const CardText = styled.div`
+const CardText = styled.h2`
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -73,14 +74,14 @@ const CardText = styled.div`
   line-height: 1.66667;
   color: #abb3ba;
 
-  padding: 20px 20px 0px 10px;
+  padding: 10px 20px 0 10px;
 `;
 
 const BtnBox = styled.div`
   display: flex;
   gap: 12px;
 
-  padding: 19px 0px 10px 10px;
+  padding: 0px 10px 10px;
 `;
 
 const StyledBtn1 = styled.button`
